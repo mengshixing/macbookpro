@@ -15,3 +15,8 @@ short_open_tag boolean
 php --ini 查看配置文件地址
 killall  php-fpm 关闭全部php-fpm 进程
 php-fpm 启动
+
+php-fpm -t检查
+最后还有一个好奇怪的location ~ \.php$ { 第一行有root html 什么鬼，注释掉
+location ~ \.php$ {
+    #root           html;
