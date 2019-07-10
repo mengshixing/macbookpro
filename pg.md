@@ -17,3 +17,7 @@ createuser username -P
 createdb dbname -O username -E UTF8 -e 
 
 https://www.cnblogs.com/tdsun/p/8625249.html
+
+进入命令行 psql --help可以 psql -U username 或者 psql -d dbname 进入
+
+给用户更改权限 alter role 'test' with superuser;
