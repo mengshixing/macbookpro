@@ -8,3 +8,6 @@ fatal: 'srv/test.git' does not appear to be a git repository
 fatal: Could not read from remote repository.
 Please make sure you have the correct access rights
 and the repository exists.
+
+git有时会有数字
+设置一下 git config --global core.quotepath false
