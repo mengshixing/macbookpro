@@ -11,3 +11,5 @@ and the repository exists.
 
 git有时会有数字
 设置一下 git config --global core.quotepath false
+
+服务器新建用户时权限.ssh/authorized_keys 可以给0644
