@@ -1,0 +1,6 @@
+mac pro 右上角显示栏卡死wifi等
+
+ps -ef | grep airport
+kill -9 进程号 
+
+疑似隔空传送的功能异常
