@@ -1,0 +1,18 @@
+1 命令行移除代理
+unset HTTP_PROXY
+unset HTTPS_PROXY
+
+2 添加代理（基于ShadowsocksX生成)
+export http_proxy=http://127.0.0.1:10888;export https_proxy=http://127.0.0.1:10888;
+
+安装 privoxy 
+参考https://blog.palemoky.top/2017/07/08/%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8B%E4%BD%BF%E7%94%A8%E4%BB%A3%E7%90%86/index.html
+1  brew install privoxy
+2  vi /usr/local/etc/privoxy/config
+添加
+listen-address 0.0.0.0:8118
+forward-socks5 / localhost:1086 .
+3 启动 brew services start privoxy
+
+测试
+curl -x 127.0.0.1:8118 www.google.com
