@@ -21,3 +21,6 @@ https://www.cnblogs.com/tdsun/p/8625249.html
 进入命令行 psql --help可以 psql -U username 或者 psql -d dbname 进入
 
 给用户更改权限 alter role 'test' with superuser;
+
+
+电脑有时候重启后pg无法启动的问题，拷贝postgresql.pid到/tmp/下面一份
