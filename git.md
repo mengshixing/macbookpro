@@ -13,3 +13,8 @@ git有时会有数字
 设置一下 git config --global core.quotepath false
 
 服务器新建用户时权限.ssh/authorized_keys 可以给0644
+
+
+mac https访问 gitee等时候 钥匙串错误
+git config --global credential.helper store 
+钥匙串清空亦可，貌似系统有bug
